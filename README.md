@@ -56,8 +56,9 @@ The retrieved content is provided to a large language model such as [GPT-4](), o
 
 ## 🚀 Build a RAG System (Step-by-Step)
 
-👉 [View on GitHub](https://github.com/Nahidzeinali-web/RAG-Application-using-LangChain-OpenAI-and-FAISS-)
+👉 [View on GitHub](https://github.com/fairdataihub/RAG_blog/tree/main)
 
+Use Case:
 
 
 ## 📚 Conclusion
