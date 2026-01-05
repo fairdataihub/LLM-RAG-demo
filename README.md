@@ -63,7 +63,6 @@ The retrieved content is provided to a large language model such as [GPT-4](), o
 
 ---
 ## 1)  Ingestion and Chunking
----
 ### 1A) Ingestion (Load NIH PDFs)
 We’ll load PDFs into LangChain `Document` objects (one per page). Each Document should keep metadata like:
 - `source_file`
