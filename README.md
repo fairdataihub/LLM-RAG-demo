@@ -179,9 +179,11 @@ def format_docs_for_prompt(docs):
 def extract_citations(text):
     """Find chunk citations like chunk_000123 in the answer."""
     return sorted(set(re.findall(r"chunk_\d{6}", text)))
-    ```
+ ```   
 ---
+
 ### 5A) Baseline (No-RAG)
+
 The model answers with **no document grounding**.
 
 ```python
