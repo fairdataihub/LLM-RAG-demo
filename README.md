@@ -62,8 +62,9 @@ The retrieved content is provided to a large language model such as [GPT-4](), o
  In this scenario, we put a few NIH DMP/DMS PDFs in a local data/ folder and ask the same question in two ways: No-RAG, where the local Llama model answers from general knowledge, and RAG, where it first retrieves relevant PDF passages using embeddings + FAISS and then answers with citations. Comparing them side by side shows that RAG is more document-based and traceable, especially for details like repository names, sharing timelines, access restrictions, and metadata requirements.
 
 ---
-## 1) Ingestion (Load NIH PDFs)
-
+## 1)  Ingestion and Chunking
+---
+### 1A) Ingestion (Load NIH PDFs)
 We’ll load PDFs into LangChain `Document` objects (one per page). Each Document should keep metadata like:
 - `source_file`
 - `page`
@@ -114,7 +115,7 @@ print("Example:", docs[0].metadata, docs[0].page_content[:200])
 
 ---
 
-## 2) Chunk the pages
+### 1B) Chunk the pages
 
 Chunking helps retrieval: instead of retrieving an entire page, we retrieve the most relevant *pieces*.
 
@@ -138,7 +139,7 @@ print("Sample chunk text (first 300 chars):", chunks[0].page_content[:300])
 
 ---
 
-## 3) Build FAISS vector store with FAISS (local)
+## 2) Embedding and Indexing
 
 We’ll embed every chunk using Ollama embeddings, then index them in FAISS.
 
@@ -159,7 +160,7 @@ print("FAISS index built and saved to ./faiss_index_nih")
 
 ---
 
-## 4) Build retriever in the two pipelines
+## 3) Build retriever in the two pipelines
 ---
 
 ```python
@@ -182,7 +183,7 @@ def extract_citations(text):
  ```   
 ---
 
-### 4A) Baseline (No-RAG)
+### 3A) Baseline (No-RAG)
 
 The model answers with **no document grounding**.
 
@@ -203,7 +204,7 @@ Return:
 ```
 ---
 
-### 4B) RAG (retrieve + grounded generation with citations)
+### 3B) RAG (retrieve + grounded generation with citations)
 
 > Newer LangChain retrievers use `retriever.invoke(question)`.
 
@@ -245,7 +246,7 @@ Return exactly:
 
 ---
 
-## 5) Ask “PDF-only” questions (to prove RAG is working)
+## 4) Generation
 
 To clearly demonstrate RAG vs No-RAG, ask questions that require **exact details** from the PDFs (repository name, timing language, tiered access, DOI, etc.):
 
