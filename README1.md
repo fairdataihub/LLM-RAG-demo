@@ -64,9 +64,7 @@ The retrieved content is provided to a large language model such as [Gemini](htt
 ---
 ## 1)  Ingestion and Chunking
 ### 1A) Ingestion (Load NIH PDFs)
-We’ll load PDFs into LangChain `Document` objects (one per page). Each Document should keep metadata like:
-- `source_file`
-- `page`
+In this step, we ingest all NIH PDF files from the data/ folder and convert them into LangChain Document objects, typically one document per page. We also attach simple metadata such as source_file and page so that any retrieved text can be traced back to the exact PDF and page number for citations. 
 
 ```python
 from pathlib import Path
@@ -116,7 +114,7 @@ print("Example:", docs[0].metadata, docs[0].page_content[:200])
 
 ### 1B) Chunk the pages
 
-Chunking helps retrieval: instead of retrieving an entire page, we retrieve the most relevant *pieces*.
+Chunking splits each PDF page into smaller overlapping text segments so the retriever can return only the most relevant passages instead of an entire page. We use an overlap to preserve context across boundaries, which improves answer quality for questions that reference nearby sentences. Each chunk is also assigned a unique chunk_id so we can cite exactly which pieces of the PDFs were used in the final RAG answer.
 
 ```python
 text_splitter = RecursiveCharacterTextSplitter(
@@ -140,7 +138,7 @@ print("Sample chunk text (first 300 chars):", chunks[0].page_content[:300])
 
 ## 2) Embedding and Indexing
 
-We’ll embed every chunk using Ollama embeddings, then index them in FAISS.
+In this step, each text chunk is converted into a dense vector using an Ollama embedding model (e.g., nomic-embed-text), so similar meanings end up close together in vector space. We store these vectors in a FAISS index to enable fast similarity search during retrieval. Saving the index locally lets you reuse it later without re-embedding the PDFs every time.
 
 ```python
 EMBED_MODEL = "nomic-embed-text"   # or "mxbai-embed-large"
@@ -160,7 +158,7 @@ print("FAISS index built and saved to ./faiss_index_nih")
 ---
 
 ## 3) Build retriever in the two pipelines
----
+This step creates a retriever over the FAISS index so we can fetch the top-k most relevant chunks for any user question. The format_docs_for_prompt() function packages those retrieved chunks into a clean context block that includes chunk_id, file name, and page number for traceability. Finally, extract_citations() pulls the chunk IDs from the model’s answer so we can report exactly which evidence chunks were used.
 
 ```python
 retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
@@ -184,7 +182,7 @@ def extract_citations(text):
 
 ### 3A) Baseline (No-RAG)
 
-The model answers with **no document grounding**.
+In the baseline (No-RAG) pipeline, the LLM answers the question directly using only its general knowledge, without retrieving any text from the PDFs. This provides a simple reference point to compare against the RAG pipeline and see how much document grounding improves accuracy and specificity. The prompt enforces a consistent output format so the two approaches are easier to compare.
 
 ```python
 def answer_without_rag(question: str) -> str:
@@ -205,7 +203,7 @@ Return:
 
 ### 3B) RAG (retrieve + grounded generation with citations)
 
-> Newer LangChain retrievers use `retriever.invoke(question)`.
+In the RAG pipeline, we first retrieve the top-k most relevant chunks from the FAISS index using retriever.invoke(question). Those chunks are then inserted as context into the prompt, and the model is instructed to answer only using that evidence and to return the chunk_id citations it relied on. This makes the output more document-specific and traceable, and it also clearly shows when the PDFs do not contain enough information to answer fully.
 
 ```python
 def answer_with_rag(question: str, k: int = 5) -> dict:
@@ -247,7 +245,7 @@ Return exactly:
 
 ## 4) Generation
 
-To clearly demonstrate RAG vs No-RAG, ask questions that require **exact details** from the PDFs (repository name, timing language, tiered access, DOI, etc.):
+This section runs the same “PDF-only” question through both pipelines to highlight the difference between general LLM answering and document-grounded RAG. The question is designed to require specific facts that should only be found in the PDFs (e.g., repository name, release timing, DOI, tiered access), so a No-RAG answer is more likely to be generic or incorrect. For transparency, we also print the retrieved chunks and metadata (chunk ID, file name, page) so you can verify exactly what evidence the RAG answer used.
 
 ```python
 question = (
