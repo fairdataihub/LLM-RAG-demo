@@ -138,7 +138,7 @@ print("Sample chunk text (first 300 chars):", chunks[0].page_content[:300])
 
 ---
 
-## 4) Build FAISS vector store with FAISS (local)
+## 3) Build FAISS vector store with FAISS (local)
 
 We’ll embed every chunk using Ollama embeddings, then index them in FAISS.
 
@@ -159,7 +159,7 @@ print("FAISS index built and saved to ./faiss_index_nih")
 
 ---
 
-## 5) Build retriever in the two pipelines
+## 4) Build retriever in the two pipelines
 ---
 
 ```python
@@ -182,7 +182,7 @@ def extract_citations(text):
  ```   
 ---
 
-### 5A) Baseline (No-RAG)
+### 4A) Baseline (No-RAG)
 
 The model answers with **no document grounding**.
 
@@ -203,7 +203,7 @@ Return:
 ```
 ---
 
-### 5B) RAG (retrieve + grounded generation with citations)
+### 4B) RAG (retrieve + grounded generation with citations)
 
 > Newer LangChain retrievers use `retriever.invoke(question)`.
 
@@ -245,7 +245,7 @@ Return exactly:
 
 ---
 
-## 6) Ask “PDF-only” questions (to prove RAG is working)
+## 5) Ask “PDF-only” questions (to prove RAG is working)
 
 To clearly demonstrate RAG vs No-RAG, ask questions that require **exact details** from the PDFs (repository name, timing language, tiered access, DOI, etc.):
 
