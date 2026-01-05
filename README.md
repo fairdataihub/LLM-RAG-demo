@@ -199,11 +199,11 @@ Return:
 """
     return llm.invoke(prompt).content
 ```
+---
 
 ### 5B) RAG (retrieve + grounded generation with citations)
-Use retrieved context and *force* the model to cite chunk IDs it relied on.
 
-> Newer LangChain retrievers use `retriever.invoke(question)` (not `get_relevant_documents`). citeturn2view2
+> Newer LangChain retrievers use `retriever.invoke(question)`.
 
 ```python
 def answer_with_rag(question: str, k: int = 5) -> dict:
