@@ -70,21 +70,44 @@ We’ll load PDFs into LangChain `Document` objects (one per page). Each Documen
 
 ```python
 from pathlib import Path
+import re
+import numpy as np
+import pandas as pd
 from langchain_community.document_loaders import PyPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import OllamaEmbeddings
+from langchain_ollama import ChatOllama, OllamaEmbeddings
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import TextLoader
+try:
+    from langchain_ollama import ChatOllama
+except Exception:
+    from langchain_community.chat_models import ChatOllama
 
+# Models (make sure you ran: ollama pull llama3.2 && ollama pull nomic-embed-text)
+LLM_MODEL = "llama3.2"
+EMBED_MODEL = "nomic-embed-text"
+
+llm = ChatOllama(model=LLM_MODEL, temperature=0.2)
+embeddings = OllamaEmbeddings(model=EMBED_MODEL)
+
+# Load PDFs (one Document per page) + add metadata for citations
 DATA_DIR = Path("data")
 pdf_paths = sorted(DATA_DIR.glob("*.pdf"))
-assert pdf_paths, "No PDFs found in ./data"
+if not pdf_paths:
+    raise FileNotFoundError("No PDFs found in ./data")
 
 docs = []
 for p in pdf_paths:
-    pages = PyPDFLoader(str(p)).load()  # one Document per page
+    pages = PyPDFLoader(str(p)).load()
     for d in pages:
         d.metadata["source_file"] = p.name
+        d.metadata["page"] = d.metadata.get("page")  # keep page if present
     docs.extend(pages)
 
-print("Loaded pages:", len(docs))
-print("Example metadata:", docs[0].metadata)
+print(f"Loaded {len(pdf_paths)} PDFs | {len(docs)} pages")
+print("Example:", docs[0].metadata, docs[0].page_content[:200])
 ```
 
 > If your PDFs are scanned images (no embedded text), `PyPDFLoader` may return empty content. In that case you’ll need OCR.
@@ -96,62 +119,83 @@ print("Example metadata:", docs[0].metadata)
 Chunking helps retrieval: instead of retrieving an entire page, we retrieve the most relevant *pieces*.
 
 ```python
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-
-splitter = RecursiveCharacterTextSplitter(
+text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
-    chunk_overlap=150
+    chunk_overlap=150,
+    separators=["\n\n", "\n", " ", ""]
 )
 
-chunks = splitter.split_documents(docs)
+chunks = text_splitter.split_documents(docs)
 
-# Add a stable chunk_id so we can cite it later
+# Add chunk_id for citations
 for i, c in enumerate(chunks):
     c.metadata["chunk_id"] = f"chunk_{i:06d}"
 
 print("Total chunks:", len(chunks))
-print("Sample chunk_id:", chunks[0].metadata["chunk_id"])
+print("Sample chunk metadata:", chunks[0].metadata)
+print("Sample chunk text (first 300 chars):", chunks[0].page_content[:300])
 ```
 
 ---
 
-## 4) Embed + index with FAISS (local)
+## 4) Build FAISS vector store with FAISS (local)
 
 We’ll embed every chunk using Ollama embeddings, then index them in FAISS.
 
 ```python
-from langchain_community.vectorstores import FAISS
-from langchain_ollama import OllamaEmbeddings
+EMBED_MODEL = "nomic-embed-text"   # or "mxbai-embed-large"
+BASE_URL = "http://localhost:11434"
 
-embeddings = OllamaEmbeddings(model="nomic-embed-text")
+embeddings = OllamaEmbeddings(model=EMBED_MODEL, base_url=BASE_URL)
 
-vectorstore = FAISS.from_documents(
-    documents=chunks,
-    embedding=embeddings
-)
+# Build FAISS index
+vectorstore = FAISS.from_documents(chunks, embeddings)
 
-retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+# Optional: save index locally
+vectorstore.save_local("faiss_index_nih")
+print("FAISS index built and saved to ./faiss_index_nih")
+
 ```
 
 ---
 
-## 5) Build the two pipelines
+## 5) Build retriever in the two pipelines
+---
 
+```python
+retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+
+def format_docs_for_prompt(docs):
+    """Create a compact context string + show citations info."""
+    blocks = []
+    for d in docs:
+        src = d.metadata.get("source_file", "unknown")
+        page = d.metadata.get("page", "NA")
+        cid = d.metadata.get("chunk_id", "NA")
+        text = d.page_content.strip()
+        blocks.append(f"[{cid} | {src} | page={page}]\n{text}")
+    return "\n\n---\n\n".join(blocks)
+
+def extract_citations(text):
+    """Find chunk citations like chunk_000123 in the answer."""
+    return sorted(set(re.findall(r"chunk_\d{6}", text)))
+    ```
+---
 ### 5A) Baseline (No-RAG)
 The model answers with **no document grounding**.
 
 ```python
-from langchain_ollama import ChatOllama
-
-llm = ChatOllama(model="llama3.2", temperature=0.2)
-
 def answer_without_rag(question: str) -> str:
     prompt = f"""You are helping write an NIH Data Management and Sharing (DMS) Plan.
 
-Answer the question as best you can.
+Answer the question clearly and concisely.
 
 Question:
 {question}
+
+Return:
+- Answer: (paragraph)
+- Notes: (bullets, if needed)
 """
     return llm.invoke(prompt).content
 ```
@@ -162,23 +206,11 @@ Use retrieved context and *force* the model to cite chunk IDs it relied on.
 > Newer LangChain retrievers use `retriever.invoke(question)` (not `get_relevant_documents`). citeturn2view2
 
 ```python
-def format_docs_for_prompt(retrieved_docs):
-    parts = []
-    for d in retrieved_docs:
-        cid = d.metadata.get("chunk_id", "unknown_chunk")
-        src = d.metadata.get("source_file", "unknown_file")
-        page = d.metadata.get("page", "?")
-        parts.append(f"[{cid} | {src} | page={page}]\n{d.page_content}")
-    return "\n\n---\n\n".join(parts)
-
-def extract_cited_chunk_ids(answer_text: str) -> list[str]:
-    # looks for chunk_000123 patterns
-    import re
-    return sorted(set(re.findall(r"chunk_\d{6}", answer_text)))
-
 def answer_with_rag(question: str, k: int = 5) -> dict:
     retriever = vectorstore.as_retriever(search_kwargs={"k": k})
-    retrieved = retriever.invoke(question)  # ✅ correct for newer LangChain
+
+    # ✅ New LangChain API
+    retrieved = retriever.invoke(question)
 
     context = format_docs_for_prompt(retrieved)
 
@@ -193,20 +225,20 @@ Question:
 {question}
 
 Return exactly:
-- Answer: (short paragraph)
+- Answer: (paragraph)
 - Key points: (bullets)
 - Citations: (list chunk_ids you relied on, like chunk_000123)
 """
-
     out = llm.invoke(prompt).content
-    cited = extract_cited_chunk_ids(out)
+    cited = extract_citations(out)
 
     return {
         "answer": out,
         "retrieved_docs": retrieved,
         "retrieved_chunk_ids": [d.metadata.get("chunk_id") for d in retrieved],
-        "cited_chunk_ids": cited,
+        "cited_chunk_ids": cited
     }
+
 ```
 
 ---
