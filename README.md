@@ -61,7 +61,7 @@ The retrieved content is provided to a large language model such as [GPT-4](), o
 Use Case: In this scenario, we start with a small collection of NIH Data Management and Sharing Plan (DMP/DMS) PDFs (e.g., example plans or guidance documents) placed in a local data/ folder. The system can then answer the same user question in two modes: No-RAG, where a local Llama model responds only from its general knowledge, and RAG, where the system first retrieves the most relevant passages from those PDFs using embeddings + FAISS and then generates an answer grounded in the retrieved text with citations. This side-by-side comparison is useful for showing that RAG produces responses that are more document-specific and traceable—especially for questions that require exact details found in the PDFs, such as repository names, data release timing, access restrictions, agreements for sensitive human data, metadata standards, and oversight responsibilities.
 
 ---
-## 1) Ingestion and Chunking (Load NIH PDFs)
+## 1) Ingestion (Load NIH PDFs)
 
 We’ll load PDFs into LangChain `Document` objects (one per page). Each Document should keep metadata like:
 - `source_file`
