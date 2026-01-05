@@ -65,3 +65,4 @@ The retrieved content is provided to a large language model such as [GPT-4](), o
 RAG is a powerful approach for building AI systems that depend on trustworthy, interpretable, and domain-specific information. Whether you are creating research tools, clinical decision-support systems, or automated policy-generation workflows, RAG ensures that your AI remains dependable, accurate, and scalable. This is the same principle we apply in DMP-Chef to produce high-quality, NIH-compliant Data Management Plans.
 
 ## ✨ Acknowledgements
+Some portions of this post were refined with the assistance of ChatGPT’s writing tools.
