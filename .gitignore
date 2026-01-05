@@ -1,0 +1,14 @@
+# virtual environments
+venv/
+.venv/
+env/
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# misc
+.DS_Store
+.ipynb_checkpoints/
+.pytest_cache/
