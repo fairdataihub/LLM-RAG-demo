@@ -44,7 +44,7 @@ Raw content, such as PDFs, HTML pages, images, and notes, is converted into clea
 
 ### 2. Embedding and Indexing
 
-Each chunk is converted into a numerical vector using an embedding model such as [MiniLM](), [mpnet](), [OpenAI](), and etc. These vectors are stored in a vector database like [FAISS](), [LanceDB](), [MongoDB Atlas Search](), [Pinecone](), [Milvus](), or [Weaviate](). This database acts as the memory used during retrieval.
+Each chunk is converted into a numerical vector using an embedding model such as [MiniLM](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), [mpnet](https://huggingface.co/sentence-transformers/all-mpnet-base-v2), [OpenAI](https://platform.openai.com/docs/guides/embeddings), and etc. These vectors are stored in a vector database like [FAISS](https://faiss.ai/), [LanceDB](https://docs.lancedb.com/), [MongoDB Atlas Search](https://www.mongodb.com/docs/atlas/atlas-vector-search/vector-search-overview/), [Pinecone](https://docs.pinecone.io/), [Milvus](https://milvus.io/docs), or [Weaviate](https://docs.weaviate.io/weaviate). This database acts as the memory used during retrieval.
 
 ### 3. Retrieval
 
@@ -52,7 +52,7 @@ When a user asks a question, the query is embedded and compared with stored vect
 
 ### 4. Generation
 
-The retrieved content is provided to a large language model such as [GPT-4](), or [Llama-3](). The model combines the retrieved information with its internal knowledge to generate a precise and context-aware response to the user’s question.
+The retrieved content is provided to a large language model such as [GPT-4](https://platform.openai.com/docs/models/gpt-4), or [Llama-3](https://www.llama.com/docs/model-cards-and-prompt-formats/meta-llama-3/). The model combines the retrieved information with its internal knowledge to generate a precise and context-aware response to the user’s question.
 
 ## 🚀 Build a RAG System (Step-by-Step)
 
