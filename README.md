@@ -58,7 +58,8 @@ The retrieved content is provided to a large language model such as [GPT-4](), o
 
 👉 [View on GitHub](https://github.com/fairdataihub/RAG_blog/tree/main)
 
-Use Case: In this scenario, we start with a small collection of NIH Data Management and Sharing Plan (DMP/DMS) PDFs (e.g., example plans or guidance documents) placed in a local data/ folder. The system can then answer the same user question in two modes: No-RAG, where a local Llama model responds only from its general knowledge, and RAG, where the system first retrieves the most relevant passages from those PDFs using embeddings + FAISS and then generates an answer grounded in the retrieved text with citations. This side-by-side comparison is useful for showing that RAG produces responses that are more document-specific and traceable—especially for questions that require exact details found in the PDFs, such as repository names, data release timing, access restrictions, agreements for sensitive human data, metadata standards, and oversight responsibilities.
+### Use Case:
+ In this scenario, we put a few NIH DMP/DMS PDFs in a local data/ folder and ask the same question in two ways: No-RAG, where the local Llama model answers from general knowledge, and RAG, where it first retrieves relevant PDF passages using embeddings + FAISS and then answers with citations. Comparing them side by side shows that RAG is more document-based and traceable, especially for details like repository names, sharing timelines, access restrictions, and metadata requirements.
 
 ---
 ## 1) Ingestion (Load NIH PDFs)
