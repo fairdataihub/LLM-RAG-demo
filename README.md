@@ -52,7 +52,7 @@ When a user asks a question, the query is embedded and compared with stored vect
 
 ### 4. Generation
 
-The retrieved content is provided to a large language model such as [GPT-4](https://platform.openai.com/docs/models/gpt-4), or [Llama-3](https://www.llama.com/docs/model-cards-and-prompt-formats/meta-llama-3/). The model combines the retrieved information with its internal knowledge to generate a precise and context-aware response to the user’s question.
+The retrieved content is provided to a large language model such as [Gemini](https://ai.google.dev/gemini-api/docs), [DeepSeek](https://api-docs.deepseek.com/), [OpenAI](https://platform.openai.com/docs/api-reference/introduction), [Claude](https://platform.claude.com/docs/en/api/overview), [Mistral](https://docs.mistral.ai/api), [Cohere](https://docs.cohere.com/), [Groq](https://console.groq.com/docs/api-reference) and etc. The model combines the retrieved information with its internal knowledge to generate a precise and context-aware response to the user’s question.
 
 ## 🚀 Build a RAG System (Step-by-Step)
 
