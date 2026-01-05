@@ -58,9 +58,7 @@ The retrieved content is provided to a large language model such as [GPT-4](), o
 
 👉 [View on GitHub](https://github.com/fairdataihub/RAG_blog/tree/main)
 
-Use Case:
-
-
+Use Case: In this scenario, we start with a small collection of NIH Data Management and Sharing Plan (DMP/DMS) PDFs (e.g., example plans or guidance documents) placed in a local data/ folder. The system can then answer the same user question in two modes: No-RAG, where a local Llama model responds only from its general knowledge, and RAG, where the system first retrieves the most relevant passages from those PDFs using embeddings + FAISS and then generates an answer grounded in the retrieved text with citations. This side-by-side comparison is useful for showing that RAG produces responses that are more document-specific and traceable—especially for questions that require exact details found in the PDFs, such as repository names, data release timing, access restrictions, agreements for sensitive human data, metadata standards, and oversight responsibilities.
 
 ---
 ## 1) Ingestion and Chunking (Load NIH PDFs)
@@ -212,13 +210,19 @@ Return exactly:
 
 ---
 
+## 6) Ask “PDF-only” questions (to prove RAG is working)
 
-## 6) Quick test with one question
-
-To clearly demonstrate RAG vs No-RAG, ask question:
+To clearly demonstrate RAG vs No-RAG, ask questions that require **exact details** from the PDFs (repository name, timing language, tiered access, DOI, etc.):
 
 ```python
-question = "When should data be shared under the NIH DMS policy, and what access controls are acceptable for sensitive human data?"
+question = (
+    "From the PDF DMS plan example, extract the EXACT: "
+    "(1) repository name used for deposit, "
+    "(2) when data will be released (timing language), "
+    "(3) how long data remains available, "
+    "(4) what access model is used (e.g., tiered access) and what agreement/contract is required. "
+    "Return bullets and include short quotes."
+)
 
 print("==== NO RAG ====")
 print(answer_without_rag(question))
@@ -226,8 +230,15 @@ print(answer_without_rag(question))
 print("\n==== WITH RAG ====")
 rag = answer_with_rag(question, k=5)
 print(rag["answer"])
+
+print("\n---- RAG Evidence (Retrieved Chunks) ----")
+for d in rag["retrieved_docs"]:
+    print(f"\n[{d.metadata.get('chunk_id')} | {d.metadata.get('source_file')} | page={d.metadata.get('page')}]")
+    print(d.page_content[:700])
+
 print("\nRetrieved chunk ids:", rag["retrieved_chunk_ids"])
 print("Cited chunk ids:", rag["cited_chunk_ids"])
+
 ```
 
 **What you should see:**
