@@ -21,7 +21,7 @@ Retrieval-Augmented Generation (RAG) is one of the most effective strategies for
 
 ## What Is Retrieval-Augmented Generation (RAG)?
 
-RAG is an AI architecture that strengthens an LLMby giving it access to an external knowledge source. Instead of producing answers only from what the model learned during training, it retrieves relevant information from documents, PDFs, webpages, or structured datasets that we provide it. This leads to more accurate, grounded, and trustworthy outputs, especially in domains that require precision.
+RAG is an AI architecture that strengthens an LLM by giving it access to an external knowledge source. Instead of producing answers only from what the model learned during training, it retrieves relevant information from documents, PDFs, webpages, or structured datasets that we provide it. This leads to more accurate, grounded, and trustworthy outputs, especially in domains that require precision.
 
 ### ✨ Why RAG Matters
 
