@@ -1,0 +1,232 @@
+URL: https://fairdataihub.org/events
+
+Events | FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Upcoming Events
+No upcoming events at the moment, check back soon.
+Past Events
+2025
+USRSE 2025
+The third annual conference from the United States Research Software Engineer Association (US-RSE).
+Past
+October 6, 2025
+to
+October 8, 2025
+Conference
+Philadelphia, PA
+View recap
+SABPA OC/LA AI for Biotechnology Seminar Series
+Learn how to make data ready for AI applications.
+Past
+August 2, 2025 - 01:30 pm
+to
+07:00 pm
+Seminar
+Irvine, CA
+View recap
+Bioinformatics Open Source Conference (BOSC) 2025
+The Bioinformatics Open Source Conference (BOSC) covers open source bioinformatics and open science.
+Past
+July 20, 2025
+to
+July 24, 2025
+Conference
+Liverpool, England
+View recap
+2025 AIM-AHEAD Annual Meeting
+Annual meeting of the NIH AIM-AHEAD Program
+Past
+July 7, 2025
+to
+July 9, 2025
+Conference
+Dallas, TX
+View recap
+Spring 2025 All Hands & Open House Meeting
+Learn about progress made by the Bridge2AI teams and engage in hands on activities during the Open House.
+Past
+May 20, 2025
+to
+May 22, 2025
+Conference
+Rockville, MD
+View recap
+HPC Best Practices Webinar Series May 2025
+Applying FAIR principles to research software with practical guidelines and tools.
+Past
+May 7, 2025 - 10:00 am
+to
+11:00 am
+Webinar
+Online
+View recap
+ARVO 2025 course Artificial Intelligence for Ophthalmic Research
+What is FAIR and AI-Ready for datasets?
+Past
+May 3, 2025 - 05:00 am
+to
+02:00 pm
+Conference
+Salt Lake City, UT
+View recap
+24th Research Data Alliance (RDA) Plenary Meeting (RDA VP24)
+The 24th RDA Plenary will spotlight the vital role of data across rapidly changing technological landscapes.
+Past
+April 7, 2025
+to
+April 11, 2025
+Conference
+Online
+View recap
+2024
+Bridge2AI Annual PIs Meeting
+The Bridge2AI Annual PIs Meeting is a gathering of the Bridge2AI Consortium PIs to discuss high-level progress and strategies.
+Past
+December 5, 2024
+to
+December 6, 2024
+Conference
+San Diego, CA
+View recap
+Introduction to AI-READI, Studying Salutogenesis in T2DM
+This webinar will introduce the AI-READI project, present the dataset, show how to request it, and explore research questions for machine learning, such as predicting health improvement in T2DM, understanding disease progression, and investigating risk factors.
+Past
+October 11, 2024 - 11:00 am
+to
+12:00 pm
+Webinar
+Online
+View recap
+Introduction to AI-READI, Studying Salutogenesis in T2DM
+This lecture, in collaboration with the Grand Challenges (GCs) at Bridge2AI, the Bridge Center Training, Recruitment, and Mentorship Working Group introduces a new education module: “Introduction to the Bridge2AI GC Datasets".
+Past
+October 10, 2024 - 12:00 pm
+to
+03:00 pm
+Lecture
+Online
+View recap
+FORCE11 Annual Conference
+Driving transformation in scholarly communications locally and globally.
+Past
+August 1, 2024
+to
+August 3, 2024
+Conference
+Los Angeles, CA
+View recap
+Bioinformatics Open Source Conference (BOSC) 2024
+The Bioinformatics Open Source Conference (BOSC) covers open source bioinformatics and open science.
+Past
+July 14, 2024
+to
+July 18, 2024
+Conference
+Montréal, Canada
+View recap
+ARVO 2024 Annual Meeting
+The ARVO Annual Meeting is the premiere gathering for eye and vision scientists from across the globe, at all career stages, students, and those in affiliated fields to share the latest research findings and collaborate on innovative solutions
+Past
+May 5, 2024 - 08:00 am
+to
+May 9, 2024 - 05:00 pm
+Conference
+Seattle, WA
+View recap
+Bridge2AI April 2024 Open House
+The Bridge2AI Open House will focus on collaborative approaches, learn about current considerations, explore new datasets, and discuss other key issues related to bridging the gap from biomedical information to AI.
+Past
+April 18, 2024 - 03:45 pm
+to
+April 19, 2024 - 05:00 pm
+Conference
+Rockville, MD
+View recap
+Bridge2AI All Hands Conference
+The NIH Common Fund’s Bridge to Artificial Intelligence (Bridge2AI)  program will propel biomedical research forward by setting the stage  for widespread adoption of artificial intelligence (AI) that tackles  complex biomedical challenges beyond human intuition.
+Past
+April 18, 2024
+to
+April 19, 2024
+Conference
+Rockville, MD
+View recap
+Bio-IT World Conference & Expo 2024
+The Bio-IT World Conference & Expo is the world’s premier event showcasing the technologies and analytic approaches that solve problems, accelerate science, and drive the future of precision medicine.
+Past
+April 15, 2024
+to
+April 17, 2024
+Conference
+Boston, MA
+View recap
+SPARC Phase 2 PI Meeting
+The SPARC Phase 2 PI Meeting will focus on collaborative approaches, learn about current considerations, explore new datasets, and discuss other key issues related to bridging the gap from biomedical information to AI.
+Past
+April 9, 2024 - 01:00 pm
+to
+April 10, 2024 - 09:00 pm
+Conference
+Minneapolis, MN
+View recap
+American Physiology Society Summit
+Explore the science behind the biggest issues impacting life and health today and make connections that will last a lifetime at the 2024 American Physiology Summit (#APS2024).
+Past
+April 1, 2024 - 08:00 am
+to
+April 7, 2024 - 01:00 pm
+Conference
+Seattle, WA
+View recap
+2023
+Society for Neuroscience 2023 Meeting
+The Society for Neuroscience 2023 Meeting is the world’s largest neuroscience conference for scientists and physicians devoted to understanding the brain and nervous system.
+Past
+November 11, 2023
+to
+November 15, 2023
+Conference
+Washington, DC
+View recap
+Bridge2AI Face-to-Face Leadership Meeting
+The Bridge2AI Face-to-Face Leadership Meeting will focus on collaborative approaches, learn about current considerations, explore new datasets, and discuss other key issues related to bridging the gap from biomedical information to AI.
+Past
+November 6, 2023
+to
+November 7, 2023
+Conference
+Los Angeles, CA
+View recap
+Bioinformatics Open Source Conference (BOSC) 2023
+The Bioinformatics Open Source Conference (BOSC) 2023 is a forum for developers and users of open source bioinformatics software.
+Past
+July 24, 2023
+to
+July 25, 2023
+Conference
+Lyon, France
+View recap
+Collaboration Fest (CoFest) 2023
+The Collaboration Fest (CoFest) 2023 is a forum for developers and users of open source bioinformatics software.
+Past
+July 22, 2023
+to
+July 23, 2023
+Conference
+Lyon, France
+View recap
+Bridge2AI Face-to-Face Leadership Meeting
+The Bridge2AI Face-to-Face Leadership Meeting will focus on collaborative approaches, learn about current considerations, explore new datasets, and discuss other key issues related to bridging the gap from biomedical information to AI.
+Past
+April 17, 2023
+to
+April 19, 2023
+Conference
+Arlington, VA
+View recap

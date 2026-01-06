@@ -1,0 +1,52 @@
+URL: https://fairdataihub.org/knowmore
+
+KnowMore | FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Project
+KnowMore
+Say "no more" to manual discovery
+Automated Knowledge Discovery Tool for SPARC Datasets
+View on GitHub
+Overview
+KnowMore is a tool readily integrable into the SPARC Portal that allows to find potential relation, difference, and similarities between multiple SPARC datasets in just a few clicks, which can lead to a new discovery, new hypothesis, or simply guide the user to the next logical step in their discovery process.
+What is SPARC?
+The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function.
+Learn more about SPARC
+What are the FAIR SPARC Data Guidelines?
+All SPARC-funded researchers must curate their datasets following the SPARC Data Standards (SDS) and share them openly on the Pennsieve data platform as per their funding agreement with SPARC.
+Learn more about SDS
+What are the challenges?
+The guidelines are very exhaustive to maximize FAIRness of SPARC datasets but are challenging and time-consuming for researchers to implement.
+What does KnowMore do?
+KnowMore uses several SPARC resources, data science methods, and knowledge of the SDS to generate various visualizations to help the user identify potential relations across datasets of interests.
+Development Approach
+KnowMore is developed as an open-source application with an MIT License. It is currently integrated into our fork of the SPARC Portal and is not available in the official SPARC Portal release. Anyone is free to fork our GitHub repository and make their own changes if they would like. If you would like to submit a feature modification, or feature suggestion, please feel free to submit an issue on the repository.
+Explore the GitHub repository
+Origin Story
+KnowMore was introduced as a project during the 2021 NIH SPARC Codeathon with the aim of leveraging the FAIR characteristics of the SPARC datasets to enable automated comparison across them. KnowMore won the Grand Prize at the Codeathon.
+Learn more about the SPARC Codeathon
+Team
+Members
+Researchers, engineers, and collaborators behind this project.
+Bhavesh Patel
+Ryan Quey
+Anmol Kiran
+Matthew Schiefer
+Impact related to this project
+Showing
+1
+publication
+View all our impact
+↗
+KnowMore: An Automated Knowledge Discovery Tool for the FAIR SPARC Datasets
+Open
+Copy
+2021
+Preprints
+Quey, R., Schiefer, M. A., Kiran, A., & Patel, B. (2021). KnowMore: an automated knowledge discovery tool for the FAIR SPARC datasets. Cold Spring Harbor Laboratory. BioRxiv. https://doi.org/10.1101/2021.08.08.455581

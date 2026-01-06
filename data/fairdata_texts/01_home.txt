@@ -1,0 +1,71 @@
+URL: https://fairdataihub.org
+
+FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Streamlining the creation of
+r
+e
+u
+s
+a
+b
+l
+e
+data to empower AI driven discoveries
+We develop open source tools, standards, and guidelines that support researchers in preparing and sharing data, software, and other research outcomes such that they are preserved over the long term and readily reusable particularly for AI applications.
+What we are building
+SODA
+SODA is a cross-platform desktop software that helps researchers prepare and share FAIR peripheral nervous system (PNS) related data and models using the SPARC Data Structure (SDS) and the SPARC Portal.
+Desktop
+FAIR
+SDS
+AI-READI
+Generating a flagship AI-ready and ethically-sourced dataset to support future AI-driven discoveries in diabetes.
+Platform
+Guidelines
+Standards
+FAIR
+Posters.science
+A free, open-source platform for sharing and discovering scientific posters, promoting collaboration and turning them into enduring research assets.
+Platform
+Guidelines
+Eye ACT
+Eye ACT uses the Envision Portal to study how eye diseases like glaucoma and diabetic retinopathy may signal early Alzheimer's, advancing AI-driven research under FAIR principles.
+Platform
+Standards
+Guidelines
+There is a lot more in the pipeline!
+Explore our projects
+We won't be able to do this alone!
+Our work would not be possible without our incredible collaborators and funders
+Disclaimer: All logos are used with adequate permissions. Opinions, interpretations, conclusions and recommendations are those of the FAIR Data Innovations Hub and are not necessarily endorsed by the other organizations mentioned on this website.
+The FAIR Data wave
+The FAIR (Findable, Accessible, Interoperable, Reusable) Principles are a set of instructions for sharing data and other research outcomes such that they are optimally reusable. Since their publication in 2016, they have been promoted and adopted by a large number of stakeholders in research data including the National Institutes of Health (NIH).
+Learn more about the FAIR Principles
+Sharing is caring... but also daunting
+Sharing FAIR data is not trivial as this involves formatting data into specific file format, organizing data files consistently, including metadata according to applicable standards, uploading data to a suitable repository, and more. This adds significant burden on researchers who are typically not trained or supported to do this. As result, they are either not making data FAIR or not doing it properly.
+Simple guides + open tools, so FAIR is effortless
+We believe that researchers already have enough work and responsibilities on their hands. Therefore, making data, software, and other research outcomes FAIR should be made very easy for them. We are trying to achieve that through two main approaches:
+Clear step-by-step guidelines
+Minimal, actionable checklists for preparing and sharing FAIR data and software so anyone can do the right thing, in the right order, without guesswork.
+Free, open-source tools
+Developing open-source and free tools that streamline the implementation of these guidelines and minimize researchers' time and effort through a combination of intuitive user interfaces, AI, and automation.
+Our solutions are making a difference worldwide
+Our solution are helping researchers all over the world with managing, curating, and sharing their data, software, and other research outcomes.
+A little bit about us
+FAIR Data Innovations Hub is a division of the California Medical Innovations Institute (CalMI
+2
+), a non profit biomedical research organization located in San Diego, California. We started this division in 2019 and now have a multidisciplinary team of enthusiasts about FAIR Data practices and software development.
+Meet our team
+We are making a difference
+Our work has led to peer-reviewed publications, development of open-source software, establishment of new standards and guidelines, conference presentations, and much more.
+See our impact
+Let's get in touch
+Need help with sharing data or research software? Want to collaborate on a cool new project or grant proposal? Have feedback or suggestions? Reach out to us!
+Contact us

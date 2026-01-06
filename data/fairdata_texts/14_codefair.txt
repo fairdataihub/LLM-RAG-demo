@@ -1,0 +1,114 @@
+URL: https://fairdataihub.org/codefair
+
+Codefair | FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Project
+Codefair
+Make your research software reusable without breaking a sweat!
+Get Codefair
+Learn more
+Overview
+Codefair is a free and open source GitHub app that acts as your personal assistant when it comes to making your research software reusable and especially complying with the Findable, Accessible, Interoperable, Reusable (FAIR) Principles for Research Software (FAIR4RS Principles).
+What is a research software?
+The commonly accepted definition of research software is "Any software created during the research process or for a research purpose". It can come in many format and could be developed for different applications such as artificial intelligence (AI)/machine learning (ML) models with Python, data visualization tools with Jupyter notebook, or data analysis code with R.
+Learn more about research software
+What does making a research software FAIR means?
+The FAIR (Findable, Accessible, Interoperable, Reusable) Principles for Research Software (FAIR4RS Principles) are a set of high-level instructions established by the research software community to make software reusable. Making research software FAIR means complying with each of the 17 FAIR principles.
+Learn more about the FAIR4RS Principles
+What are the challenges?
+We developed the FAIR-Biomedical Research Software (FAIR-BioRS) guidelines so it is easier for researchers to make their software compliant with the FAIR4RS Principles. However, it still requires time and effort to do so, especially when software is frequently updated and has multiple contributors
+Learn more about the FAIR-BioRS guidelines
+How does Codefair help?
+Just install Codefair from the GitHub marketplace on your software's GitHub repository. By communicating with you through GitHub issues and submitting pull requests, Codefair will then make sure that your software follows best coding practices, provides metadata in standard format, includes a license file, and much more to align with the FAIR4RS principles.
+Impact of Codefair
+Snapshot of usage and adoption
+0
++
+Repositories managed
+0
++
+Individual users and organizations using Codefair
+Development Approach
+The Codefair application is maintained in a GitHub repository and is developed in an open and transparent manner. It ingeniously combines Probot, a serverless environment on Vercel, and the Octokit library. We are always open for contributions from the community.
+Explore the GitHub repository
+Team
+Members
+Researchers, engineers, and collaborators behind this project.
+Bhavesh Patel
+Dorian Portillo
+Sanjay Soundarajan
+Timeline
+Milestone
+3
+Continued development
+April 2024 - Present
+Features are added to codefair for helping researchers with all requirements of making software FAIR.
+Milestone
+2
+First version released
+March 2024
+The first version of codefair is publicly released on the GitHub marketplace.
+Milestone
+1
+Birth of codefair
+December 2022
+The concept of codefair is mapped out by the FAIR Data Innovations Hub.
+1
+2
+3
+Impact related to this project
+Showing
+7
+publications
+View all our impact
+↗
+Making Research Software Findable, Accessible, Interoperable, Reusable (FAIR) with Codefair
+Open
+Copy
+2025
+Conference Presentations
+Patel, B., Portillo, D., & Soundarajan, S. (2025, October 5). Making Research Software Findable, Accessible, Interoperable, Reusable (FAIR) with Codefair. US Research Software Engineering Conference 2025 (USRSE'25), Philadelphia, PA. Zenodo. https://doi.org/10.5281/zenodo.17268745
+Codefair: easily make Biomedical Research Software Findable, Accessible, Interoperable, Reusable (FAIR) (Poster)
+Open
+Copy
+2025
+Posters
+Portillo D, Soundarajan S and Patel B. Codefair: easily make Biomedical Research Software Findable, Accessible, Interoperable, Reusable (FAIR) [version 1; not peer reviewed]. F1000Research 2025, 14:745 (poster) (https://doi.org/10.7490/f1000research.1120251.1)
+Codefair
+Open
+Copy
+2024
+Software
+Codefair. (started 2024). https://github.com/fairdataihub/codefair-app (Development status: Active)
+Codefair: Your Personal Assistant for Developing FAIR Software (Presentation)
+Open
+Copy
+2024
+Conference Presentations
+Portillo, D., Soundarajan, S., Clark, J., & Patel, B. (2024). Codefair: Your Personal Assistant for Developing FAIR Software (Presentation) (1.0.0). Zenodo. https://zenodo.org/records/13948381
+Codefair: Make biomedical research software FAIR without breaking a sweat
+Slides presented at Bioinformatics Open Source Conference (BOSC), 2024
+Open
+Copy
+2024
+Conference Presentations
+Portillo, D., Soundarajan, S., Clark, J., & Patel, B. (2024). Codefair: Make biomedical research software FAIR without breaking a sweat (13:912). F1000 Research. https://doi.org/10.7490/f1000research.1119824.1
+Codefair - Your Personal Assistant for Developing FAIR Software (Poster)
+Open
+Copy
+2024
+Posters
+Portillo, D, Soundarajan, S, Clark, J & Patel, B. (2024). Codefair - Your Personal Assistant for Developing FAIR Software (Poster) (1.0.0). Zenodo. https://zenodo.org/records/13948350
+Codefair - Make biomedical research software FAIR without breaking a sweat
+Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023
+Open
+Copy
+2024
+Posters
+Portillo, D, Soundarajan, S, Clark, J & Patel, B. (2024). Codefair - Make biomedical research software FAIR without breaking a sweat (13:911). F1000Research. https://doi.org/10.7490/f1000research.1119823.1

@@ -1,0 +1,87 @@
+URL: https://fairdataihub.org/eyeact
+
+Eye ACT | FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Project
+Eye ACT
+Seeing the Future of Brain Health Through the Eyes
+Exploring how ophthalmic conditions can provide early indicators of Alzheimer’s disease and other neurodegenerative conditions.
+Learn more
+Coming soon
+Visit the Envision Portal
+Coming soon
+Overview
+The Eye ACT study, led by Dr. Cecilia Lee at the University of Washington, aims to provide insights on how ophthalmic conditions such as glaucoma and diabetic retinopathy can provide early indicators to Alzheimer's disease. As part of this project, the FAIR Data Innovations Hub is leading the development of the Envision Portal.
+What is the Eye ACT study?
+The Eye ACT study investigates the relationship between eye health and cognitive decline. It aims to identify biomarkers in the eye that can predict the onset of Alzheimer's disease and other neurodegenerative conditions.
+What is the Envision Portal?
+The Envision Portal is an open-source platform designed to streamline the management and sharing of eye imaging data. It will help researchers manage, curate, and share their data following the FAIR principles so that datasets are AI-ready and reusable.
+What challenges does it address?
+There is currently no platform that helps make eye imaging data FAIR. The Envision Portal enables that through intuitive user interfaces and automation so that making eye imaging data FAIR requires minimal time and effort from researchers.
+Why is this important?
+Creating FAIR and AI-ready datasets is crucial for collaborating more effectively, leveraging AI technologies, and accelerating discoveries that could lead to better diagnostic tools and treatments for neurodegenerative diseases.
+Snapshot of the Eye ACT project
+Early impact and study scale
+0
++
+Participants in the study
+0
++
+Patient visits
+0
+GB
+Data collected
+Development approach
+All software and tools developed by our team for the Eye ACT project, including the Envision Portal, are developed using an open-source approach. This enables transparency, reuse, and collaboration with the broader open-source community.
+Explore the Eye ACT GitHub organization
+Funding
+Our contribution to the Eye ACT project is funded through a subaward from the National Institute on Aging (NIA) grant R01AG060942.
+Explore the award on NIH Reporter
+Team
+Members
+Researchers, engineers, and collaborators behind this project.
+Bhavesh Patel
+Sanjay Soundarajan
+Aydan Gasimova
+Nahid Zeinali
+Dorian Portillo
+Research partners
+We are collaborating on this project with Dr. Cecilia Lee's team at the Computational Ophthalmology Lab (University of Washington).
+Project milestones
+Key milestones for the Eye ACT study and development of the Envision Portal.
+Milestone
+1
+Development of the Envision Portal
+September 2024
+Development of the Envision Portal begins as part of the Eye ACT study, focusing on building FAIR and AI-ready workflows for eye imaging data.
+1
+Impact related to this project
+Showing
+3
+publications
+View all our impact
+↗
+Publicly Available Imaging Datasets for Age-related Macular Degeneration: Evaluation according to the Findable, Accessible, Interoperable, Reusable (FAIR) Principles
+Open
+Copy
+2025
+Journal Articles
+Gim, N., Ferguson, A., Blazes, M., Soundarajan, S., Gasimova, A., Jiang, Y., Sanchez Gutiérrez, C., Zalunardo, L., Corradetti, G., Elze, T., Honda, N., Waheed, N., Cairns, A. M., C., Lee, A. Y., Sadda, S. R., Keenan, T. D. L., Patel, B., & Lee, C. S., on behalf of the Ryan Initiative For Macular Research (RIMR) Consortium. (2025). Experimental Eye Research, 110342. https://doi.org/10.1016/j.exer.2025.110342
+Eye ACT Home Page
+Open
+Copy
+2025
+Software
+Eye ACT Home Page (started 2025). https://github.com/EyeACT/eyeactstudy.org (Development status: Active)
+Envision Portal
+Open
+Copy
+2024
+Software
+Envision Portal (started 2024). https://github.com/EyeACT/envision-portal (Development status: Active)

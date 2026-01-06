@@ -1,0 +1,83 @@
+URL: https://fairdataihub.org/projects
+
+FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Our Projects
+Open-source tools and platforms that make FAIR a habit.
+Ongoing
+SODA
+Streamlined Organization of Data for the SPARC Portal
+SODA is a cross-platform desktop app that helps researchers prepare and share peripheral nervous system data and research in line with the SPARC Data Structure (SDS).
+Desktop
+SPARC
+Data Curation
+Learn more
+AI-READI
+AI-Ready and Exploratory Atlas for Diabetes Insights
+A Bridge2AI initiative where we lead the Tools module, developing FAIR-forward infrastructure across Data, Ethics, Standards, Teaming, Tools, and Skills.
+Platform
+Standards
+Guidelines
+Learn more
+Eye ACT
+A study leveraging the Envision Portal to explore links between glaucoma, diabetic retinopathy, and early indicators of Alzheimer's by advancing FAIR data sharing and AI-driven research.
+Platform
+Standards
+Guidelines
+Learn more
+DMP Chef
+An open-source, AI-powered platform to draft funder-compliant Data Management Plans through guided, researcher-friendly workflows. With a few clicks, generate comprehensive DMPs that meet funding requirements and support FAIR data practices.
+Platform
+AI-Assisted
+Workflows
+Learn more
+Posters.science
+A free, open-source platform that turns conference posters into enduring, findable research assets. Transform fleeting conference moments into a searchable, citable knowledge base that amplifies research impact and accelerates scientific discovery.
+Platform
+Open Science
+Discovery
+Learn more
+Codefair
+An free automated GitHub App that helps make research software reusable and FAIR-aligned by surfacing license, metadata, documentation, and archival through Zenodo.
+FAIR
+Automation
+Zenodo
+Learn more
+Completed
+FAIR-BioRS Guidelines
+Minimal, actionable steps to make biomedical research software reusable, aligned with FAIR4RS principles. Reduce compliance overhead while maximizing software citations and fostering collaboration across research institutions.
+FAIR4RS
+Guidelines
+Publication
+Learn more
+FAIRshare
+A cross-platform desktop software that empowers researchers to effortlessly organize and share biomedical data and software according to applicable FAIR guidelines.
+Desktop
+FAIR
+Biomedical
+Learn more
+KnowMore
+An integrable tool for the SPARC Portal that reveals relationships, differences, and similarities between datasets to guide discovery.
+SPARC
+Comparison
+Insights
+Learn more
+SPARClink
+Open tools to visualize how SPARC outputs influence the wider research community through linked publications and networks.
+Software
+Visualization
+SPARC
+Learn more
+AQUA
+Advanced Query Architecture for the SPARC Portal
+Improving discovery on the SPARC Portal with richer, faster, more precise search capabilities.
+Software
+Search
+SPARC
+Learn more

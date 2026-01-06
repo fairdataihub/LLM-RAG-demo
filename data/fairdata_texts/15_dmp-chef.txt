@@ -1,0 +1,46 @@
+URL: https://fairdataihub.org/dmp-chef
+
+DMP Chef | FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Project
+DMP Chef
+Draft funder-compliant Data Management Plans with AI
+Helping researchers create compliant and machine-actionable Data Management Plans in minutes.
+Visit DMP Chef
+Overview
+Data Management Plans (DMPs) are now commonly required by funders with all grant proposals. Researchers often struggle to prepare them due to the lack of training, the complexity of data, and the wide range of best practices, repositories, and metadata choices available. DMP Chef is a free and open-source AI-based tool designed to assist researchers with drafting funder-compliant DMPs.
+What is DMP Chef?
+DMP Chef is a web tool where researchers can easily generate drafts of funder-compliant DMPs tailored to their grant proposals and even create machine-actionable versions.
+How does it work?
+Researchers only need to answer a few questions about their grant proposal (target funding organization, data to be collected, etc.) and DMP Chef will generate a draft of the entire DMP in line with the requirements of the target funder.
+What challenges does it address?
+Writing a DMP is overwhelming, with each funder having its own policies, formats, and compliance criteria. Researchers often struggle to prepare a compliant DMP due to lack of training and support, and technical complexity.
+Why is this important?
+A strong DMP is often a requirement not only for securing research funds but, as the first point of data documentation, also critical for adopting FAIR data practices. DMP Chef helps researchers create high-quality DMPs that ensure compliance with funder policies and maximize the long-term impact of their data.
+Development Approach
+DMP Chef is developed using an open-source approach. This allows for transparency and collaboration with the open source community. The GitHub repository will be linked here as we develop the platform.
+Explore the GitHub repository
+Team
+Members
+Researchers, engineers, and collaborators behind this project.
+Bhavesh Patel
+Sanjay Soundarajan
+Dorian Portillo
+Xuebin Dong
+Nahid Zeinali
+Research partners
+We are collaborating on this project with the developers and maintainers of the DMPTool at the California Digital Library (University of California).
+Project milestones
+Key milestones in the early development of DMP Chef.
+Milestone
+1
+Phase 0
+January 2025 – August 2025
+We are evaluating the performance of various Large Language Models (LLMs) for generating DMPs compliant with NIH requirements.
+1

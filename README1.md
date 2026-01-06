@@ -59,12 +59,12 @@ The retrieved content is provided to a large language model such as [Gemini](htt
 👉 [View on GitHub](https://github.com/fairdataihub/RAG_blog/tree/main)
 
 ### Use Case:
- In this scenario, we put a few NIH DMP/DMS PDFs in a local data/ folder and ask the same question in two ways: No-RAG, where the local Llama model answers from general knowledge, and RAG, where it first retrieves relevant PDF passages using embeddings + FAISS and then answers with citations. Comparing them side by side shows that RAG is more document-based and traceable, especially for details like repository names, sharing timelines, access restrictions, and metadata requirements.
+In this scenario, we place a few NIH DMP PDFs in a local data/ folder and ask the same question using two approaches: No-RAG, where a local Llama model answers from general knowledge, and RAG, where the system retrieves relevant passages from the PDFs using embeddings + FAISS and generates an answer with citations. Comparing the outputs side by side shows that RAG is more document-grounded and traceable, especially for specific details like repository names, sharing timelines, access restrictions, and metadata requirements.
 
 ---
 ## 1)  Ingestion and Chunking
-### 1A) Ingestion (Load NIH PDFs)
-In this step, we ingest all NIH PDF files from the data/ folder and convert them into LangChain Document objects, typically one document per page. We also attach simple metadata such as source_file and page so that any retrieved text can be traced back to the exact PDF and page number for citations. 
+### 1A) Ingestion (Load PDFs)
+In this step, we ingest all  PDF files from the data/ folder and convert them into LangChain Document objects, typically one document per page. We also attach simple metadata such as source_file and page so that any retrieved text can be traced back to the exact PDF and page number for citations. 
 
 ```python
 from pathlib import Path

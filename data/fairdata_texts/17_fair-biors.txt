@@ -1,0 +1,99 @@
+URL: https://fairdataihub.org/fair-biors
+
+FAIR-BioRS | FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Project
+FAIR Biomedical Research Software Guidelines
+Minimal and actionable step-by-step guidelines for making biomedical research software reusable in line with the FAIR4RS principles
+Explore the guidelines
+Overview
+The FAIR Biomedical Research Software (FAIR-BioRS) guidelines are a set of minimal and actionable step-by-step guidelines for making biomedical research software FAIR (Findable, Accessible, Interoperable, Reusable), in line with the FAIR Principles for Research Software (FAIR4RS Principles).
+What are research software?
+Research software is any software created during the research process or for a research purpose. It can come in many format such as artificial intelligence (AI) models as Python scripts or data visualization tools as Jupyter notebooks. They are an essential aspects of biomedical research and therefore making them FAIR, i.e. optimally reusable is critical just like data.
+Learn more about research software
+How to make research software FAIR?
+The FAIR Principles for Research Software (FAIR4RS Principles) are reformulated versions of the FAIR Principles developed by the research software community specifically to make research software reusable.
+Learn more about the FAIR4RS Principles
+What are the challenges?
+By design, the FAIR4RS Principles only provide a high-level framework for making software FAIR but do not provide practical instructions to do so. Therefore, making software FAIR requires an in-depth understanding of each of the FAIR4RS Principles, and finding out how to practically comply with them.
+How do the FAIR-BioRS guidelines help?
+We established the FAIR Biomedical Research Software (FAIR-BioRS) guideline, which are clear, actionable, and step-by-step guidelines for making biomedical research software FAIR. Researchers can simply follow and implement the guidelines as they are developing their software to make it compliant with the FAIR4RS principles.
+Learn more about the FAIR-BioRS guidelines
+Development Approach
+The FAIR-BioRS guidelines were developed in collaboration with researchers from UCSF and ELIXIR (E.U.). We first established a list of outstanding questions we identified for practically implementing the FAIR4RS Principles (e.g., How to obtain a unique identifier for software? How to include metadata? and so on). Then we combined literature review, community feedback, and our own assessment as developers of research software to established answers for these questions. Finally, we organized these answers as a set of step-by-step instructions that follow the typical sofware development process which became the FAIR-BioRS guidelines.
+Explore the FAIR-BioRS documentation
+Funding
+The FAIR-BioRS guidelines were conceived while working on a project funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID). Besides some initial effort through this project for the first few months, the development of the guidelines has been done without any support, through the sole will of the project members to make it easier for our peers wanting to develop and share FAIR software.
+Explore the parent award on NIH Reporter
+Team
+Members
+Researchers, engineers, and collaborators behind this project.
+Bhavesh Patel
+Sanjay Soundarajan
+Research partners
+The FAIR-BioRS guidelines were developed in collaboration with Dr. Zicheng Hu (UCSF) and Dr. Hervé Ménager (Institut Pasteur, ELIXIR).
+Zicheng Hu (UCSF)
+Hervé Ménager
+Timeline
+Milestone
+5
+Promotion and development of user support tools
+September 2023 - Present
+We continue to promote the guidelines. We are also developing user-support tools such as FAIRshare and codefair so that implementing the guidelines is seamless for researchers.
+Milestone
+4
+Publication of the guidelines
+September 2023
+The second versions of the guidelines are published in Nature Scientific Data.
+Milestone
+3
+Community feedback and improvements
+April 2022 - August 2023
+Improvements are made through based on community feedback collected during conferences, webinars, and other means. Our most fruitful outreach effort was at the Biomedical Open Source Conference (BOSC) in 2022 and 2023, especially during the CoFest organized across two days before the conference.
+Milestone
+2
+First version
+December 2021 - April 2022
+The first version of the guidelines is established based on literature review plus our own assessment.
+Milestone
+1
+Beginning of the idea
+December 2021
+The need for actionable guidelines to make biomedical research software FAIR is identified.
+1
+2
+3
+4
+5
+Impact related to this project
+Showing
+3
+publications
+View all our impact
+↗
+Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool
+Open
+Copy
+2023
+Journal Articles
+Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool. Scientific Data, 10(1). https://doi.org/10.1038/s41597-023-02463-x
+FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR
+Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023
+Open
+Copy
+2023
+Conference Presentations
+Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR. F1000 Research Limited. https://doi.org/10.7490/f1000research.1119609.1
+FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR
+Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023
+Open
+Copy
+2023
+Posters
+Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR. F1000 Research Limited. https://doi.org/10.7490/f1000research.1119608.1

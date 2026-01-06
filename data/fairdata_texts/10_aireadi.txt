@@ -1,0 +1,170 @@
+URL: https://fairdataihub.org/aireadi
+
+AI-READI | FAIR Data Innovations Hub
+Projects
+Team
+Impact
+Gallery
+Blog
+Events
+Contact Us
+Project
+AI-READI
+Artificial Intelligence Ready and Exploratory Atlas for Diabetes Insights
+Generating a flagship AI-ready and ethically-sourced dataset to boost future AI-driven discoveries in type 2 diabetes mellitus (T2DM)
+Learn more
+Overview
+AI-READI is one of the data generation projects funded by the National Institutes of Health (NIH)'s Bridge2AI Program. The AI-READI project is structured into six modules: Data Acquisition, Ethics, Standards, Teaming, Tools, and Skills & Workforce Development. The FAIR Data Innovations Hub is leading the Tools module.
+What is the goal of the AI-READI project?
+The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset that will support future AI-driven research projects to provide critical insights into type 2 diabetes mellitus (T2DM), including salutogenic pathways to return to health.
+Learn more about the AI-READI project
+What data will be collected?
+The project will aim to collect data from 4,000 participants. To ensure the data is population-representative, the participants will be balanced for three factors: disease severity, race/ethnicity, and sex. Various data types will be collected from each participant, including vitals, electrocardiogram, glucose monitoring, physical activity, ophthalmic evaluation, etc.
+How will the project data be made AI-ready?
+The AI-READI project data will be made FAIR to optimize reuse by humans and machines (i.e., AI/ML program). The data will additionally be shared according to applicable ethical guidelines to enhance AI-readiness.
+Learn more about FAIR
+What is the FAIR Data Innovations Hub's role in the project?
+Our team will lead the development of fairhub.io, a web platform with intuitive user interfaces and automation tools that will help data-collecting researchers from the project (and beyond) with managing, curating, and sharing FAIR, ethically-sourced, and AI-ready datasets.
+Impact of AI-READI
+Snapshot of key metrics
+0
+Participants enrolled
+0
++
+Data types to be collected (vitals, electrocardiogram, etc.)
+0
+Institutions collaborating on the project
+0
++
+Team members contributing to the project
+Development approach
+All software and tools from the AI-READI project, including fairhub.io, are developed under an MIT License from the AI-READI organization on GitHub.
+Explore the AI-READI GitHub organization
+Funding
+The AI-READI project is funded by the National Institutes of Health (NIH)'s Bridge2AI program.
+Explore the award on NIH Reporter
+Team
+Members
+Researchers, engineers, and collaborators behind this project.
+Bhavesh Patel
+Sanjay Soundarajan
+Aydan Gasimova
+Dorian Portillo
+Nada Haboudal
+Research partners
+The AI-READI project is led by multiple institutions. In addition to the FAIR Data Innovations Hub, other institutions collaborating on the AI-READI project include: University of Washington, Oregon Health & Science University, Johns Hopkins University, University of California at San Diego, Stanford University, Native BioData Consortium, University of Alabama at Birmingham, and Microsoft.
+Timeline
+Milestone
+1
+Year 1 development
+September 2022 - Aug 2023
+The base framework of fairhub.io will be developed and support will be provided uploading data, structuring high-level data and metadata, and sharing data.
+1
+Impact related to this project
+Showing
+17
+publications
+View all our impact
+↗
+Standards in the Preparation of Biomedical Research Metadata: A Bridge2AI Perspective
+Open
+Copy
+2025
+Preprints
+Caufield, H., Ghosh, S., Kong, S. W., Parker, J., Sheffield, N., Patel, B., Williams, A., Clark, T., & Munoz-Torres, M. C. (2025). Standards in the Preparation of Biomedical Research Metadata: A Bridge2AI Perspective. arXiv. https://doi.org/10.48550/arXiv.2508.01141
+Dataset Documentation for Responsible AI: Analysis of Suitability and Usage for Health Datasets
+Open
+Copy
+2025
+Preprints
+Heinke, A., Huang, L., Simpkins, K. U., Kalaw, F. G. P., Karsolia, A., Singh, K., Soundarajan, S., Nebeker, C., Baxter, S. L., Lee, C. S., Lee, A. Y., & Patel, B. (2025). Dataset Documentation for Responsible AI: Analysis of Suitability and Usage for Health Datasets. bioRxiv. https://doi.org/10.1101/2025.11.18.689064
+Open Data Sharing in Clinical Research and Participants Privacy: Challenges and Opportunities in the Era of Artificial Intelligence
+Open
+Copy
+2025
+Preprints
+Hallaj, S., Heinke, A., Kalaw, F. G. P., Gim, N., Blazes, M., Owen, J., Dysinger, E., Benton, E. S., Cordier, B. A., Evans, N. G., Li-Pook-Than, J., Snyder, M. P., Nebeker, C., Zangwill, L. M., Baxter, S. L., McWeeney, S., Lee, C. S., Lee, A. Y., Patel, B., & on behalf of the AI-READI Consortium. (2025). Open Data Sharing in Clinical Research and Participants Privacy: Challenges and Opportunities in the Era of Artificial Intelligence. ArXiv. https://doi.org/10.48550/arXiv.2508.01140
+AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond
+Open
+Copy
+2024
+Journal Articles
+AI-READI Consortium. (2024). AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond. Nature Metabolism. https://doi.org/10.1038/s42255-024-01165-x
+AI-readiness for Biomedical Data: Bridge2AI Recommendations
+Open
+Copy
+2024
+Preprints
+Clark, T., Caufield, H., Mohan, J. A., Al, S. M., Amorim, E., Eddy, J., Gim, N., ... Patel, B., Williams, A., & Munoz-Torres, M. C. (2024). AI-readiness for Biomedical Data: Bridge2AI Recommendations. BioRxiv. https://doi.org/10.1101/2024.10.23.619844
+Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data
+Open
+Copy
+2024
+Preprints
+Alavi, A., Cha, K., Esfarjani, D. P., Patel, B., Than, J. L. P., Lee, A. Y., Nebeker, C., Snyder, M., & Bahmani, A. (2024). Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data. MedRxiv. https://doi.org/10.1101/2024.07.29.24310315
+Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster)
+Open
+Copy
+2024
+Posters
+Patel, B., Soundarajan, S., Gasimova, A., Gim, N., Shaffer, J., & Lee, A. (2024). Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984769
+Introduction to AI-READI, Studying Salutogenesis in T2DM (dkNET Presentation)
+Open
+Copy
+2024
+Webinars/Lectures
+Lee, C., Patel, B., & Baxter, S. (2024). Introduction to AI-READI, Studying Salutogenesis in T2DM (dkNET Presentation) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984710
+Introduction to AI-READI, Studying Salutogenesis in T2DM (Bridge2AI Lecture Series)
+Open
+Copy
+2024
+Webinars/Lectures
+Lee, C., Patel, B., & Baxter, S. (2024). Introduction to AI-READI, Studying Salutogenesis in T2DM (Bridge2AI Lecture Series) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984755
+AI-READI Code of Conduct
+Open
+Copy
+2024
+Reports
+Lee, A., Owen, J., Patel, B., Nebeker, C., Lee, C., Zangwill, L., Hurst, S., Singer, S., Li-Pook-Than, J., & Matthews, D. (2024). AI-READI Code of Conduct (2.0). Zenodo. https://zenodo.org/records/13328255
+License terms for reusing the AI-READI dataset
+Open
+Copy
+2024
+Reports
+Contreras, J., Evans, B., Hurst, S., Patel, B., Mcweeney, S., Lee, C., & Lee, A. (2024). License terms for reusing the AI-READI dataset (1.0). Zenodo. https://doi.org/10.5281/zenodo.10642459
+AI-READI Steering Committee Charter
+Open
+Copy
+2023
+Reports
+Lee, A., Owen, J., Patel, B., Nebeker, C., Lee, C., Zangwill, L., Hurst, S., & Singer, S. (2023). AI-READI Steering Committee Charter (1.0). Zenodo. https://doi.org/10.5281/zenodo.7641684
+FAIRhub Study Management Platform
+Open
+Copy
+2022
+Software
+FAIRhub study management platform. (started 2022). https://github.com/AI-READI/fairhub-app (Development status: Active)
+FAIRhub Data Portal
+Open
+Copy
+2022
+Software
+FAIRhub data portal. (started 2022). https://github.com/AI-READI/fairhub-portal (Development status: Active)
+Pyfairdatatools
+Open
+Copy
+2022
+Software
+pyfairdatatools. (started 2022). https://github.com/AI-READI/pyfairdatatools (Development status: Active)
+Flagship Dataset of Type 2 Diabetes from the AI-READI Project
+Open
+Copy
+2022
+Datasets
+AI-READI Consortium. (2022). Flagship Dataset of Type 2 Diabetes from the AI-READI Project (1.0.0). FAIRhub. https://doi.org/10.60775/fairhub.1
+Software Development Best Practices of the AI-READI Project
+Open
+Copy
+2022
+Reports
+Patel, B., Soundarajan, S., McWeeney, S., Cordier, B. A., & Benton, E. S. (2022). Software Development Best Practices of the AI-READI Project (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.7363102
