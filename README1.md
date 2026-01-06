@@ -58,7 +58,7 @@ The retrieved content is provided to a large language model such as [Gemini](htt
 
 👉 [View on GitHub](https://github.com/fairdataihub/RAG_blog/tree/main)
 
-### Use Case:
+### 🧭 Use Case:
 In this scenario, we collect about 20 pages from the **FAIR Data Innovations Hub** website (`fairdataihub.org`) and save them locally as plain text files. We then ask the same questions using two approaches: **No-RAG**, where a local Llama model answers from general knowledge, and **RAG**, where the system first retrieves the most relevant website text chunks using **Ollama embeddings + FAISS** and then generates an answer based only on that retrieved context. Comparing the outputs side by side highlights how RAG produces answers that are more **website-grounded** and less likely to hallucinate—especially for site-specific details like leadership/team information, project names, and tool descriptions (e.g., Posters.science and DMP Chef).
 
 ---
