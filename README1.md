@@ -66,6 +66,7 @@ In this scenario, we collect about 20 pages from the **FAIR Data Innovations Hub
 
 First, install all required packages from `requirements.txt`.  
 This ensures your environment has everything needed for web crawling, text processing, vector indexing (FAISS), and Ollama + LangChain integration.
+
 ---
 ## 🦙 Step 2 — Configure Ollama models (LLM + Embeddings)
 
