@@ -348,16 +348,6 @@ This is the main demo: we ask the **same questions** twice and compare the outpu
   - one that retrieves top chunks (`k=5`) and passes them as context (**RAG**)
 - Then we run a short list of questions and print both answers side by side.
 
-### Why it’s useful
-
-RAG performs best on **website-specific facts**—things a model might guess without seeing the source, such as:
-- who leads the Hub,
-- what tools like **DMP Chef** do,
-- which projects are listed and how they’re described.
-
-The result is usually clearer: **RAG answers stay closer to the website content**, while No-RAG is more likely to miss or hallucinate details.
-
-
 ```python
 # Step 6: NO-RAG vs RAG answering 
 
