@@ -7,19 +7,18 @@
 # LLM-RAG-demo
 
 ## About
-This repository provides a small, end-to-end **Retrieval-Augmented Generation (RAG)** demo inspired by our work on **DMP-Chef**.  
+This repository provides a small, end-to-end **Retrieval-Augmented Generation (RAG)** demo inspired by our work on **[DMP-Chef](https://fairdataihub.org/dmp-chef)**.  
 RAG is a practical approach for improving the accuracy and trustworthiness of LLM outputs by retrieving relevant context from a local knowledge base (e.g., web pages, PDFs, notes) and using that context during generation.
 
-In this demo, we collect a small snapshot (~20 pages) from the **FAIR Data Innovations Hub** website (`fairdataihub.org`), save it locally as `.txt`, build a **FAISS** vector index using **Ollama embeddings**, and compare **No-RAG vs RAG** answers side by side.
+In this demo, we collect a small snapshot (~20 pages) from the **[FAIR Data Innovations Hub](https://fairdataihub.org/)** website, save it locally as `.txt`, build a **FAISS** vector index using **Ollama embeddings**, and compare **No-RAG vs RAG** answers side by side.
 
-👉 Blog post: *How to Quickly Set Up a RAG System: A Practical Guide Inspired by Our Work on DMP-Chef*  
-👉 Code repo: https://github.com/fairdataihub/LLM-RAG-demo
+👉 **Blog post:** *[How to Quickly Set Up a RAG System: A Practical Guide Inspired by Our Work on DMP-Chef](https://fairdataihub.org/blog/rag-setup)*  
+👉 **Code repo:** **[fairdataihub/LLM-RAG-demo](https://github.com/fairdataihub/LLM-RAG-demo)**
 
 ---
 
 ## Standards followed
-The overall codebase is organized in alignment with the **FAIR-BioRS** guidelines (https://fair-biors.org/). The Python code in the primary Jupyter notebook, **`main.ipynb`** (https://github.com/fairdataihub/LLM-RAG-demo/blob/main/main.ipynb), is written to follow **PEP 8** style conventions (https://peps.python.org/pep-0008/). Functions are documented using docstrings formatted according to **Google’s Python Style Guide** (https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings). All required dependencies are listed in **`requirements.txt`** (https://github.com/fairdataihub/LLM-RAG-demo/blob/main/requirements.txt).
-
+The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines](https://fair-biors.org/)**. The Python code in the primary Jupyter notebook, **[`main.ipynb`](https://github.com/fairdataihub/LLM-RAG-demo/blob/main/main.ipynb)**, is written to follow **[PEP 8](https://peps.python.org/pep-0008/)** style conventions. Functions are documented using docstrings formatted according to **[Google’s Python Style Guide](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)**. All required dependencies are listed in **[`requirements.txt`](https://github.com/fairdataihub/LLM-RAG-demo/blob/main/requirements.txt)**.
 
 ---
 
