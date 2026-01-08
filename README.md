@@ -138,19 +138,9 @@ This work is licensed under **MIT**. See `LICENSE` for more information.
 ---
 
 ## Feedback and contribution
-- Use **GitHub Issues** to submit feedback, questions, or suggestions:
-  - https://github.com/fairdataihub/LLM-RAG-demo/issues
-- To contribute code:
-  1. Fork the repo
-  2. Create a feature branch
-  3. Submit a Pull Request
+Use the GitHub issues for submitting feedback or making suggestions. You can also work the repository and submit a pull request with suggestions.
 
 ---
 
 ## How to cite
-If you use this code, please cite:
-1) The related blog post / project documentation (if applicable), and  
-2) This repository (preferred via Zenodo versioned DOI, when available).
-
-**Repository citation (DOI):** *pending*  
-Once a Zenodo DOI is minted for this repository, replace the DOI badge above and cite the specific released version.
+If you use this code, please cite the related paper (it will be listed here when available) and also cite this repository following the instructions on provided here on Zenodo for the specific version of this repository that you use.
