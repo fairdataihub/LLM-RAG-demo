@@ -1,7 +1,20 @@
-# LLM-RAG-demo — Repo Setup & Run Guide
+[![Contributors](https://img.shields.io/github/contributors/fairdataihub/LLM-RAG-demo)](https://github.com/fairdataihub/LLM-RAG-demo/graphs/contributors)
+[![Stargazers](https://img.shields.io/github/stars/fairdataihub/LLM-RAG-demo?style=social)](https://github.com/fairdataihub/LLM-RAG-demo/stargazers)
+[![Issues](https://img.shields.io/github/issues/fairdataihub/LLM-RAG-demo)](https://github.com/fairdataihub/LLM-RAG-demo/issues)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-pending-lightgrey)](#how-to-cite)
 
-This repository contains a small, end-to-end **Retrieval-Augmented Generation (RAG)** demo inspired by our work on **DMP-Chef**.  
-It crawls ~20 pages from `fairdataihub.org`, builds a local **FAISS** vector index using **Ollama embeddings**, and compares **No-RAG vs RAG** answers.
+# LLM-RAG-demo
+
+## About
+This repository provides a small, end-to-end **Retrieval-Augmented Generation (RAG)** demo inspired by our work on **DMP-Chef**.  
+RAG is a practical approach for improving the accuracy and trustworthiness of LLM outputs by retrieving relevant context from a local knowledge base (e.g., web pages, PDFs, notes) and using that context during generation.
+
+In this demo, we collect a small snapshot (~20 pages) from the **FAIR Data Innovations Hub** website (`fairdataihub.org`), save it locally as `.txt`, build a **FAISS** vector index using **Ollama embeddings**, and compare **No-RAG vs RAG** answers side by side.
+
+👉 Blog post: *How to Quickly Set Up a RAG System: A Practical Guide Inspired by Our Work on DMP-Chef*  
+👉 Code repo: https://github.com/fairdataihub/LLM-RAG-demo
+
 
 ---
 
@@ -119,59 +132,25 @@ When you run the comparison step, you should see side-by-side answers for:
 
 ---
 
-## Troubleshooting
-
-### “Cannot reach Ollama at http://localhost:11434”
-- Start Ollama:
-  ```bash
-  ollama serve
-  ```
-- Confirm it’s running:
-  ```bash
-  curl http://localhost:11434/api/tags
-  ```
-
-### “ModuleNotFoundError: langchain_ollama”
-Install:
-```bash
-pip install langchain-ollama
-```
-
-### FAISS install issues (Windows)
-Try:
-```bash
-pip install faiss-cpu
-```
-
-If it fails, ensure you are using a supported Python version (often 3.10/3.11 works best).
-
-### Crawling returns too few pages
-- Some sites block bots; try again later.
-- Increase `MAX_DEPTH` or adjust skip rules in the crawler.
-
----
-
-## Repo structure (example)
-
-```
-LLM-RAG-demo/
-  data/
-    fairdata_texts/
-  faiss_index_fairdata/
-  requirements.txt
-  rag_demo.py  (or notebook)
-  README.md
-```
-
----
-
-## Notes
-
-- This demo is designed to stay small and fast (defaults to ~20 pages).
-- RAG results depend heavily on the pages you crawl and your chunking settings.
-- If you contribute, please open a Pull Request with a clear summary of changes.
-
----
-
 ## License
-See `LICENSE` if included in this repository.
+This work is licensed under **MIT**. See `LICENSE` for more information.
+
+---
+
+## Feedback and contribution
+- Use **GitHub Issues** to submit feedback, questions, or suggestions:
+  - https://github.com/fairdataihub/LLM-RAG-demo/issues
+- To contribute code:
+  1. Fork the repo
+  2. Create a feature branch
+  3. Submit a Pull Request
+
+---
+
+## How to cite
+If you use this code, please cite:
+1) The related blog post / project documentation (if applicable), and  
+2) This repository (preferred via Zenodo versioned DOI, when available).
+
+**Repository citation (DOI):** *pending*  
+Once a Zenodo DOI is minted for this repository, replace the DOI badge above and cite the specific released version.
