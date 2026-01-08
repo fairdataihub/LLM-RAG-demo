@@ -16,8 +16,10 @@ In this demo, we collect a small snapshot (~20 pages) from the **FAIR Data Innov
 👉 Code repo: https://github.com/fairdataihub/LLM-RAG-demo
 
 ---
+
 ## Standards followed
-The overall code is structured according to the FAIR-BioRS guidelines  https://fair-biors.org/ . The Python code in the Jupyter notebook main.ipynb  follows the PEP8 guidelines. Functions are documented with docstring formatted following Google's style guide. All the dependencies are documented in the environment.yml file.
+The overall codebase is organized in alignment with the **FAIR-BioRS** guidelines (https://fair-biors.org/). The Python code in the primary Jupyter notebook, **`main.ipynb`** (https://github.com/fairdataihub/LLM-RAG-demo/blob/main/main.ipynb), is written to follow **PEP 8** style conventions (https://peps.python.org/pep-0008/). Functions are documented using docstrings formatted according to **Google’s Python Style Guide** (https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings). All required dependencies are listed in **`requirements.txt`** (https://github.com/fairdataihub/LLM-RAG-demo/blob/main/requirements.txt).
+
 
 ---
 
@@ -27,13 +29,6 @@ The overall code is structured according to the FAIR-BioRS guidelines  https://f
 git clone https://github.com/fairdataihub/LLM-RAG-demo.git
 cd LLM-RAG-demo
 ```
-
-If you plan to contribute changes:
-
-```bash
-git checkout -b my-update
-```
-
 ---
 
 ## 2) Create and activate a Python environment
