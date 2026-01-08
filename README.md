@@ -1,8 +1,9 @@
-[![Contributors](https://img.shields.io/github/contributors/fairdataihub/LLM-RAG-demo)](https://github.com/fairdataihub/LLM-RAG-demo/graphs/contributors)
-[![Stargazers](https://img.shields.io/github/stars/fairdataihub/LLM-RAG-demo?style=social)](https://github.com/fairdataihub/LLM-RAG-demo/stargazers)
-[![Issues](https://img.shields.io/github/issues/fairdataihub/LLM-RAG-demo)](https://github.com/fairdataihub/LLM-RAG-demo/issues)
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-pending-lightgrey)](#how-to-cite)
+[![Contributors](https://img.shields.io/github/contributors/fairdataihub/LLM-RAG-demo?style=for-the-badge&color=1f6feb)](https://github.com/fairdataihub/LLM-RAG-demo/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/fairdataihub/LLM-RAG-demo?style=for-the-badge&color=f9d949)](https://github.com/fairdataihub/LLM-RAG-demo/stargazers)
+[![Issues](https://img.shields.io/github/issues/fairdataihub/LLM-RAG-demo?style=for-the-badge&color=ff7a00)](https://github.com/fairdataihub/LLM-RAG-demo/issues)
+[![License: MIT](https://img.shields.io/badge/License-MIT?style=for-the-badge&color=2ea44f)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-pending?style=for-the-badge&color=9e9e9e)](#how-to-cite)
+
 
 # LLM-RAG-demo
 
