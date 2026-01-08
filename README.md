@@ -96,7 +96,7 @@ curl http://localhost:11434/api/tags
 
 This repo may include the demo as a script, notebook, or both. Use whichever exists in your repo structure.
 
-### Option  — Run as a Jupyter notebook
+### Run as a Jupyter notebook
 If you have a notebook (`RAG_Application.ipynb`):
 ```bash
 pip install notebook
