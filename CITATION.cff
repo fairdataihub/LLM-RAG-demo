@@ -1,0 +1,26 @@
+title: LLM-RAG-demo
+authors:
+  - given-names: Nahid
+    family-names: Zeinali
+    email: nzeinali@calmi2.org
+    affiliation: FAIR DATA INNOVATION HUB
+  - given-names: Bhavesh
+    family-names: Patel
+    email: bpatel@calmi2.org
+    affiliation: FAIR Data Innovations Hub, California Medical Innovations Institute
+cff-version: 1.2.0
+message: If you use this software, please cite it using the metadata from this file.
+type: software
+abstract: End-to-end RAG demo inspired by DMP Chef that indexes a small snapshot
+  of FAIR Data Innovations Hub pages using FAISS + Ollama embeddings and
+  compares No-RAG vs RAG answers.
+keywords:
+  - Retrieval-Augmented Generation
+  - RAG demo
+  - Ollama
+  - FAISS
+  - LLM
+  - embeddings
+  - FAIR Data Innovations Hub
+license: MIT
+repository-code: https://github.com/fairdataihub/LLM-RAG-demo
