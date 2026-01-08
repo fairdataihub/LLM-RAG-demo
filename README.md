@@ -15,6 +15,9 @@ In this demo, we collect a small snapshot (~20 pages) from the **FAIR Data Innov
 👉 Blog post: *How to Quickly Set Up a RAG System: A Practical Guide Inspired by Our Work on DMP-Chef*  
 👉 Code repo: https://github.com/fairdataihub/LLM-RAG-demo
 
+---
+## Standards followed
+The overall code is structured according to the FAIR-BioRS guidelines  https://fair-biors.org/ . The Python code in the Jupyter notebook main.ipynb  follows the PEP8 guidelines. Functions are documented with docstring formatted following Google's style guide. All the dependencies are documented in the environment.yml file.
 
 ---
 
@@ -97,14 +100,8 @@ curl http://localhost:11434/api/tags
 
 This repo may include the demo as a script, notebook, or both. Use whichever exists in your repo structure.
 
-### Option A — Run as a Python script
-If you have a script (example):
-```bash
-python rag_demo.py
-```
-
-### Option B — Run as a Jupyter notebook
-If you have a notebook (example):
+### Option  — Run as a Jupyter notebook
+If you have a notebook (`RAG_Application.ipynb`):
 ```bash
 pip install notebook
 jupyter notebook
