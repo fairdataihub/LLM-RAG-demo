@@ -20,7 +20,7 @@ In this demo, we collect a small snapshot (~20 pages) from the **[FAIR Data Inno
 ---
 
 ## Standards followed
-The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines](https://fair-biors.org/)**. The Python code in the primary Jupyter notebook, **[`main.ipynb`](https://github.com/fairdataihub/LLM-RAG-demo/blob/main/main.ipynb)**, is written to follow **[PEP 8](https://peps.python.org/pep-0008/)** style conventions. Functions are documented using docstrings formatted according to **[Google’s Python Style Guide](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)**. All required dependencies are listed in **[`requirements.txt`](https://github.com/fairdataihub/LLM-RAG-demo/blob/main/requirements.txt)**.
+The overall codebase is organized in alignment with the **[FAIR-BioRS guidelines](https://fair-biors.org/)**. The Python code in the primary Jupyter notebook, **[`main.ipynb`](https://github.com/fairdataihub/LLM-RAG-demo/blob/main/main.ipynb)**, is written to follow **[PEP 8](https://peps.python.org/pep-0008/)** style conventions. html#38-comments-and-docstrings)**. All required dependencies are listed in **[`requirements.txt`](https://github.com/fairdataihub/LLM-RAG-demo/blob/main/requirements.txt)**.
 
 ---
 
