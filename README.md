@@ -126,7 +126,7 @@ When you run the comparison step, you should see side-by-side answers for:
 ---
 
 ## License
-This work is licensed under the **[MIT License](https://opensource.org/license/mit/)**. See **[`LICENSE`](LICENSE)** for more information.
+This work is licensed under the **[MIT License](https://opensource.org/license/mit/)**. See **[`LICENSE`](https://github.com/fairdataihub/LLM-RAG-demo/blob/main/LICENSE)** for more information.
 
 
 ---
