@@ -1,0 +1,57 @@
+{
+  "name": "LLM-RAG-demo",
+  "@context": "https://w3id.org/codemeta/3.0",
+  "applicationCategory": "Scientific",
+  "author": [
+    {
+      "affiliation": {
+        "name": "FAIR Data Innovations Hub, California Medical Innovations Institute",
+        "type": "Organization"
+      },
+      "email": "nzeinali@calmi2.org",
+      "familyName": "Zeinali",
+      "id": "https://github.com/fairdataihub",
+      "givenName": "Nahid",
+      "type": "Person"
+    },
+    {
+      "affiliation": {
+        "name": "FAIR Data Innovations Hub, California Medical Innovations Institute",
+        "type": "Organization"
+      },
+      "email": "bpatel@calmi2.org",
+      "familyName": "Patel",
+      "id": "https://github.com/fairdataihub",
+      "givenName": "Bhavesh",
+      "type": "Person"
+    }
+  ],
+  "codeRepository": "https://github.com/fairdataihub/LLM-RAG-demo",
+  "dateCreated": "2026-01-05",
+  "description": "End-to-end RAG demo that indexes a small snapshot of FAIR Data Innovations Hub pages using FAISS + Ollama embeddings and compares No-RAG vs RAG answers.",
+  "developmentStatus": "active",
+  "funder": {
+    "name": "https://github.com/fairdataihub",
+    "type": "Organization"
+  },
+  "funding": "https://github.com/fairdataihub/LLM-RAG-demo",
+  "issueTracker": "https://github.com/fairdataihub/LLM-RAG-demo/issues",
+  "keywords": [
+    "Retrieval-Augmented Generation",
+    "RAG demo",
+    "Ollama",
+    "FAISS",
+    "LLM",
+    "embeddings",
+    "FAIR Data Innovations Hub"
+  ],
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": [
+    "Jupyter Notebook"
+  ],
+  "relatedLink": [
+    "https://fairdataihub.org/blog/rag-setup",
+    "https://fairdataihub.org/dmp-chef"
+  ],
+  "type": "SoftwareSourceCode"
+}
