@@ -139,4 +139,4 @@ You can also **fork** the repository and submit a **Pull Request** with your cha
 ---
 
 ## How to cite
-If you use this code, please cite this repository using the **versioned DOI on Zenodo** for the specific release you used (see [CITATION.cff](CITATION.cff) file)
+If you use this code, please cite this repository using the **[versioned DOI on Zenodo](https://zenodo.org/records/18202285)** for the specific release you used (see [CITATION.cff](CITATION.cff) file)
