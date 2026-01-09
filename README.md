@@ -2,7 +2,6 @@
 [![Stars](https://img.shields.io/github/stars/fairdataihub/LLM-RAG-demo?color=ffb400)](https://github.com/fairdataihub/LLM-RAG-demo/stargazers)
 [![Issues](https://img.shields.io/github/issues/fairdataihub/LLM-RAG-demo?color=orange)](https://github.com/fairdataihub/LLM-RAG-demo/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-success)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-pending-lightgrey)](#how-to-cite)
 
 
 
