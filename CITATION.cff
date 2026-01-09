@@ -11,9 +11,9 @@ authors:
 cff-version: 1.2.0
 message: If you use this software, please cite it using the metadata from this file.
 type: software
-abstract: End-to-end RAG demo that indexes a small snapshot of FAIR Data
-  Innovations Hub pages using FAISS + Ollama embeddings and compares No-RAG vs
-  RAG answers.
+abstract: >-
+  End-to-end RAG demo that indexes a small snapshot of FAIR Data Innovations Hub
+  pages using FAISS + Ollama embeddings and compares No-RAG vs RAG answers.
 keywords:
   - Retrieval-Augmented Generation
   - RAG demo
@@ -24,3 +24,6 @@ keywords:
   - FAIR Data Innovations Hub
 license: MIT
 repository-code: https://github.com/fairdataihub/LLM-RAG-demo
+doi: 10.5281/zenodo.18202285
+date-released: '2026-01-09'
+version: 1.0.0
