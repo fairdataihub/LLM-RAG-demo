@@ -140,4 +140,4 @@ You can also **fork** the repository and submit a **Pull Request** with your cha
 ---
 
 ## How to cite
-If you use this code, please cite this repository using the **versioned DOI on Zenodo** for the specific release you used (instructions will be added once the Zenodo record is available). For now, you can reference the repository here: **[fairdataihub/LLM-RAG-demo](https://github.com/fairdataihub/LLM-RAG-demo)**.
+If you use this code, please cite this repository using the **versioned DOI on Zenodo** for the specific release you used (see [CITATION.cff](CITATION.cff) file)
