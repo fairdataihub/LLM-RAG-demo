@@ -5,7 +5,7 @@
   "author": [
     {
       "affiliation": {
-        "name": "FAIR DATA INNOVATION HUB",
+        "name": "FAIR Data Innovations Hub, California Medical Innovations Institute",
         "type": "Organization"
       },
       "email": "nzeinali@calmi2.org",
@@ -28,8 +28,8 @@
   ],
   "codeRepository": "https://github.com/fairdataihub/LLM-RAG-demo",
   "dateCreated": "2026-01-05",
-  "datePublished": "2026-01-08",
-  "description": "End-to-end RAG demo inspired by DMP Chef that indexes a small snapshot of FAIR Data Innovations Hub pages using FAISS + Ollama embeddings and compares No-RAG vs RAG answers.",
+  "description": "End-to-end RAG demo that indexes a small snapshot of FAIR Data Innovations Hub pages using FAISS + Ollama embeddings and compares No-RAG vs RAG answers.",
+  "developmentStatus": "active",
   "funder": {
     "name": "https://github.com/fairdataihub",
     "type": "Organization"
